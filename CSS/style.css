@@ -1,12 +1,11 @@
 
+
 @media only screen and (min-width: 768px) {
 
 body {
 	background: url('layout-1.gif') ;
 	margin-top: 0px;
-	margin-bottom: 0px;
-	
-	
+	margin-bottom: 0px;	
 }
 
 
@@ -68,7 +67,7 @@ body {
 	font-weight: bold;
 	padding-left: 20px;
 	width: 100%;
-	text-align: left;
+	text-align: right;
 }
 
 #navigation a:hover  {
@@ -154,9 +153,10 @@ color: #52B5E2;}
 	clear: both;
 	text-align: left;
 		
-}/* CSS Document */
 }
-@media only screen and (min-width: 1140px) {
+
+}
+/*@media only screen and (min-width: 1140px) {
 
 body {
 	background: url('layout-1.gif') ;
@@ -311,7 +311,7 @@ color: #52B5E2;}
 	clear: both;
 	text-align: left;
 		
-}/* CSS Document */
+}
 }
 
 
