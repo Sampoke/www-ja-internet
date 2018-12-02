@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</head>
+<body> 
+
+<div id="holder"> 
+  
+  <div id="header"> 
+    <a href="Sampo-Keranen-Portfolio.html" title="Pictures"> <h1>Portfolio</h1> </a>
+  </div> 
+  
+  <div id="navigation"> 
+    <a href="pictures.html" title="Pictures">&rsaquo; Pictures</a>
+	<a href="audiovideo.html">&rsaquo; Audio and Video</a>
+	<a href="draganddrop.html">&rsaquo; Drag and Drop</a>
+	<a href="geolocation.html">&rsaquo; Geolocation</a>
+	<a href="input.html">&rsaquo; Input field</a>
+	<a href="list.html">&rsaquo; List</a>
+	<a href="table.html">&rsaquo; Table</a>
+  </div> 
+  
+ 
+  
+
+  
+  <div id="boxr"> 
+    <h2>Drag image</h2> 
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="images/muh house.png" draggable="true" ondragstart="drag(event)" id="drag_img" width="100" height="100">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br/> 
+  
+  </div>
+  
+    <div 
+		id="footer"> Footer
+		
+  </div> 
+
+</div> 
+</body>
+</html>
